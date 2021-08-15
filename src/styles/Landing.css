@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.bg-image {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(220, 220, 220, 0.2)),
+    url("https://images.pexels.com/photos/1266193/pexels-photo-1266193.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 90vh;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 70% 94%, 40% 100%, 25% 94%, 0 94%);
+  margin: 15px;
+}
+.text-button {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.text-box {
+  z-index: -1;
+}
+
+.heading-primary {
+  color: white;
+  width: 45%;
+  font-size: 4vh;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px rgb(121, 123, 126);
+}
+
+.btn-learn-more {
+  top: 52%;
+  left: 10%;
+  background-color: rgb(20, 152, 212);
+  color: white;
+  font-size: 18px;
+  padding: 20px 30px 20px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  white-space: nowrap;
+  filter: drop-shadow(3px 3px 3px #222);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.btn-learn-more:hover {
+  transform: translate(-5px, -15px);
+  padding: 22px 32px 22px 32px;
+}
+.btn-learn-more:active {
+  transform: translate(-4px, -8px);
+}
+
+.summary-container {
+  position: absolute;
+  top: 92%;
+  left: 10%;
+  color: black;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  width: 70%;
+  z-index: -1;
+}
+.summary-header {
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.summary-text {
+  font-size: 24px;
+}
+
+.btn-email {
+  background-color: rgb(20, 152, 212);
+  color: white;
+  font-size: 15px;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  white-space: nowrap;
+  filter: drop-shadow(3px 3px 3px #222);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-email:hover {
+  transform: translate(-5px, -15px);
+  padding: 16px 32px 17px 32px;
+}
+.btn-email:active {
+  transform: translate(-4px, -6px);
+}
+
+@media screen and (max-width: 1770px) {
+  .text-button {
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 1472px) {
+  .text-button {
+    top: 28%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .text-button {
+    top: 23%;
+    left: 9%;
+  }
+  .heading-primary {
+    font-size: 3.5vh;
+  }
+}
+@media screen and (max-width: 820px) {
+  .bg-image {
+    background-position-x: 15%;
+    margin: 0;
+  }
+  .text-button {
+    top: 23%;
+    left: 9%;
+  }
+  .heading-primary {
+    font-size: 3.5vh;
+  }
+}
+@media screen and (max-width: 695px) {
+  .bg-image {
+    background-position-x: 40%;
+  }
+  .heading-primary {
+    font-size: 2.5vh;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .text-button {
+    position: none;
+    top: 0;
+    left: 0;
+  }
+  .bg-image {
+    position: relative;
+    background-position-x: 30%;
+    background-size: cover;
+    position: center;
+    height: 65vh;
+  }
+  .text-box {
+    position: absolute;
+    top: 25vh;
+    left: 9vw;
+    width: 70vh;
+  }
+  .heading-primary {
+    font-size: 2vh;
+  }
+  .btn-learn-more {
+    font-size: 2vh;
+    padding: 20px 30vw 20px 30vw;
+    margin-top: 2vh;
+    position: absolute;
+    top: 76vh;
+    left: 5vw;
+  }
+  .summary-container {
+    top: 87vh;
+    left: 10%;
+    width: 85%;
+  }
+  .btn-email {
+    font-size: 2vh;
+    padding: 15px 30vw 15px 30vw;
+    position: relative;
+    right: 0.5vh;
+  }
+  .summary-text {
+    font-size: 16px;
+  }
+}
