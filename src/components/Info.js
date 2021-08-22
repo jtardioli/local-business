@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Info() {
-  return <div>This is the info page</div>;
+  return <div>info</div>;
 }
 
 export default Info;

@@ -1,11 +1,11 @@
 .container {
   display: flex;
-  flex-direction: column;
 }
-.bg-image {
+.bg-image1 {
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(220, 220, 220, 0.2)),
-    url("https://images.pexels.com/photos/1266193/pexels-photo-1266193.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  height: 90vh;
+    url("/src/images/signing.jpeg");
+  transform: scaleX(-1);
+  height: 81vh;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -14,15 +14,11 @@
   bottom: 0;
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 100% 94%, 70% 94%, 40% 100%, 25% 94%, 0 94%);
-  margin: 15px;
 }
 .text-button {
   position: absolute;
-  top: 35%;
-  left: 10%;
-}
-.text-box {
-  z-index: -1;
+  top: 30%;
+  left: 20%;
 }
 
 .heading-primary {
@@ -46,7 +42,7 @@
   border-radius: 50px;
   border: none;
   white-space: nowrap;
-  filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px rgb(59, 59, 59));
   transition: all 0.3s ease;
   cursor: pointer;
   z-index: -1;
@@ -62,10 +58,10 @@
 
 .summary-container {
   position: absolute;
-  top: 92%;
+  top: 90%;
   left: 10%;
   color: black;
-  margin-top: 30px;
+  margin-top: 0px;
   padding-bottom: 50px;
   width: 70%;
   z-index: -1;
@@ -93,7 +89,7 @@
   border-radius: 50px;
   border: none;
   white-space: nowrap;
-  filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px rgb(59, 59, 59));
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -108,21 +104,21 @@
 
 @media screen and (max-width: 1770px) {
   .text-button {
-    left: 7%;
+    left: 10%;
   }
 }
 
 @media screen and (max-width: 1472px) {
   .text-button {
     top: 28%;
-    left: 5%;
+    left: 10%;
   }
 }
 
 @media screen and (max-width: 1115px) {
   .text-button {
     top: 23%;
-    left: 9%;
+    left: 10%;
   }
   .heading-primary {
     font-size: 3.5vh;
@@ -135,7 +131,7 @@
   }
   .text-button {
     top: 23%;
-    left: 9%;
+    left: 10%;
   }
   .heading-primary {
     font-size: 3.5vh;

@@ -90,8 +90,11 @@ nav {
   nav {
     background-color: rgb(156, 143, 116);
     margin-top: 0;
-    padding-top: 1, 5vh;
     filter: drop-shadow(1px 2px 2px rgb(61, 61, 61));
+  }
+
+  .image {
+    margin-top: 10px;
   }
 
   .call-us-button {

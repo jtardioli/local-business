@@ -58,7 +58,7 @@ function Navbar() {
               className={`nav-link${!displayHWH ? " lower-opacity" : ""}`}
               to="/info"
             >
-              How We Help
+              Services
             </Link>
           </li>
           <li>
@@ -82,7 +82,10 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <button className="call-us-button">Call Us</button>
+
+        <a href="tel:6138302283">
+          <button className="call-us-button">Call Us</button>
+        </a>
       </div>
 
       <div
