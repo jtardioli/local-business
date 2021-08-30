@@ -1,7 +1,7 @@
 import React from "react";
 
-function Certified() {
+function CertifiedTrueCopies() {
   return <div>Certified</div>;
 }
 
-export default Certified;
+export default CertifiedTrueCopies;

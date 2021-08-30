@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   position: absolute;
   top: 0;
   z-index: -1;
@@ -12,7 +11,7 @@
 .bg-image2 {
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(220, 220, 220, 0.2)),
     url("/src/images/service.jpeg");
-  height: 50vh;
+  height: 53vh;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 94%, 70% 94%, 40% 100%, 25% 94%, 0 94%);
 }
@@ -51,21 +50,48 @@
 
 .summary-container1 {
   color: black;
-  width: 75%;
-  margin-top: 3vw;
+  width: 65%;
+  margin-top: 5vw;
 }
 .summary-header1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 2vh;
+  margin: 3vh;
 }
 .summary-text1 {
-  font-size: 1.1em;
-  margin: 2vh;
+  font-size: 1em;
+  margin: 3vh;
   line-height: 1.8em;
+  font-weight: lighter;
+}
+
+.second-nav-ctn {
+  border-bottom: solid 1px rgb(177, 177, 177);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.second-nav-btns {
+  padding: 8px;
+  font-size: 0.95em;
+
+  border: solid 1px rgb(177, 177, 177);
+  border-bottom: none;
+  margin: 3vh 5px 0 5px;
+  background-color: rgb(247, 244, 244);
+  transition: ease-in-out 0.2s;
+}
+.second-nav-btns:hover {
+  background-color: rgba(13, 15, 29, 0.8);
+  color: white;
+}
+
+.selected-btn {
+  background-color: rgba(13, 15, 29, 0.8);
+  color: white;
 }
 
 @media screen and (max-width: 830px) {

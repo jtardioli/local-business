@@ -1,7 +1,7 @@
 import React from "react";
 
-function Commissioning() {
+function CommissioningOfExhibits() {
   return <div>Commissioning</div>;
 }
 
-export default Commissioning;
+export default CommissioningOfExhibits;

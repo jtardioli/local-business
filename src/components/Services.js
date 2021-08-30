@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Swearing from "./servicesComponents/SwearingOfAffidavits";
-import Certified from "./servicesComponents/CertifiedTrueCopies";
+import SwearingOfAffidavits from "./servicesComponents/SwearingOfAffidavits";
+import StatutoryDeclarations from "./servicesComponents/StatutoryDeclarations";
+import CommissioningOfExhibits from "./servicesComponents/CommissioningOfExhibits";
+import CertifiedTrueCopies from "./servicesComponents/CertifiedTrueCopies";
 import "../styles/Services.css";
 
 function Services() {
   const [active, setActive] = useState("Swearing");
+
+  const onSwearingBtn = () => {
+    setActive("Swearing");
+  };
+  const onCertifiedBtn = () => {
+    setActive("Certified");
+  };
+  const onDeclarationsBtn = () => {
+    setActive("Declarations");
+  };
+  const onCommisioningBtn = () => {
+    setActive("Commisioning");
+  };
+
   return (
     <div>
       <div className="container2">
@@ -25,15 +41,45 @@ function Services() {
               bibendum maximus mi, at imperdiet dolor semper vitae.
             </p>
           </div>
-          <div>
-            <button>Swearing of Affidavits</button>
-            <button>Certified True Copies</button>
-            <button>Statutory Declarations</button>
-            <button>Commissioning of Exhibits</button>
+          <div className="second-nav-ctn">
+            <button
+              className={`second-nav-btns ${
+                active === "Swearing" && " selected-btn"
+              }`}
+              onClick={onSwearingBtn}
+            >
+              Swearing of Affidavits
+            </button>
+            <button
+              className={`second-nav-btns ${
+                active === "Certified" && " selected-btn"
+              }`}
+              onClick={onCertifiedBtn}
+            >
+              Certified True Copies
+            </button>
+            <button
+              className={`second-nav-btns ${
+                active === "Declarations" && " selected-btn"
+              }`}
+              onClick={onDeclarationsBtn}
+            >
+              Statutory Declarations
+            </button>
+            <button
+              className={`second-nav-btns ${
+                active === "Commisioning" && " selected-btn"
+              }`}
+              onClick={onCommisioningBtn}
+            >
+              Commissioning of Exhibits
+            </button>
           </div>
           <div>
-            {active === "Swearing" && <Swearing />}
-            {active === "Certified" && <Certified />}
+            {active === "Swearing" && <SwearingOfAffidavits />}
+            {active === "Certified" && <CertifiedTrueCopies />}
+            {active === "Declarations" && <StatutoryDeclarations />}
+            {active === "Commisioning" && <CommissioningOfExhibits />}
           </div>
         </div>
       </div>

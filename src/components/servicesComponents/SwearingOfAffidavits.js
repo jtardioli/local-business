@@ -1,7 +1,7 @@
 import React from "react";
 
-function Swearing() {
+function SwearingOfAffidavits() {
   return <div>swearing of affits</div>;
 }
 
-export default Swearing;
+export default SwearingOfAffidavits;
