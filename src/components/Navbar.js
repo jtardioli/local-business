@@ -56,7 +56,7 @@ function Navbar() {
               onMouseEnter={onHover1}
               onMouseLeave={onHoverExit}
               className={`nav-link${!displayHWH ? " lower-opacity" : ""}`}
-              to="/info"
+              to="/services"
             >
               Services
             </Link>

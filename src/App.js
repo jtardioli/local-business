@@ -1,8 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-
+import Services from "./components/Services";
 import Landing from "./components/Landing";
-import Info from "./components/Info";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -16,8 +15,8 @@ function App() {
         <Route path="/" exact>
           <Landing />
         </Route>
-        <Route path="/info" exact>
-          <Info />
+        <Route path="/services" exact>
+          <Services />
         </Route>
         <Route path="/about" exact>
           <About />
