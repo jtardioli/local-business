@@ -5,26 +5,20 @@ import "../styles/Navbar.css";
 function Navbar() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
   const [displayHWH, setDisplayHWH] = useState(true);
-  const [displayAbout, setDisplayAbout] = useState(true);
+
   const [displayContact, setDisplayContact] = useState(true);
   function onHover1() {
     setDisplayHWH(true);
-    setDisplayAbout(false);
+
     setDisplayContact(false);
   }
-  function onHover2() {
-    setDisplayHWH(false);
-    setDisplayAbout(true);
-    setDisplayContact(false);
-  }
+
   function onHover3() {
     setDisplayHWH(false);
-    setDisplayAbout(false);
     setDisplayContact(true);
   }
   function onHoverExit() {
     setDisplayHWH(true);
-    setDisplayAbout(true);
     setDisplayContact(true);
   }
 
@@ -42,17 +36,25 @@ function Navbar() {
       }
     });
   }
+  function closeNav() {
+    setBurgerIsOpen(false);
+    const navLinks = document.querySelectorAll(".nav-links li");
+    navLinks.forEach((link, index) => {
+      link.style.animation = "";
+    });
+  }
   return (
-    <nav>
+    <nav className={`${burgerIsOpen ? "overflow-v" : "overflow-h"}`}>
       <div>
-        <Link to="/">
-          <img className="image" src="/images/logo.png" alt="" />
+        <Link onClick={closeNav} to="/">
+          <img className="image" src="/images/LuciaTardioli.png" alt="" />
         </Link>
       </div>
       <div className="group-right-nav">
         <ul className={`nav-links${burgerIsOpen ? " nav-active" : ""}`}>
           <li>
             <Link
+              onClick={closeNav}
               onMouseEnter={onHover1}
               onMouseLeave={onHoverExit}
               className={`nav-link${!displayHWH ? " lower-opacity" : ""}`}
@@ -61,18 +63,10 @@ function Navbar() {
               Services
             </Link>
           </li>
+
           <li>
             <Link
-              onMouseEnter={onHover2}
-              onMouseLeave={onHoverExit}
-              className={`nav-link${!displayAbout ? " lower-opacity" : ""}`}
-              to="/about"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
+              onClick={closeNav}
               onMouseEnter={onHover3}
               onMouseLeave={onHoverExit}
               className={`nav-link${!displayContact ? " lower-opacity" : ""}`}

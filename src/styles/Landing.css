@@ -4,12 +4,11 @@
   flex-wrap: wrap;
   position: absolute;
   top: 0;
-  z-index: -1;
-  padding-bottom: 10vh;
-}
 
+  z-index: -1;
+}
 .bg-image1 {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(220, 220, 220, 0.2)),
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(220, 220, 220, 0.2)),
     url("/src/images/signing.jpeg");
   height: 81vh;
   background-size: cover;
@@ -22,7 +21,6 @@
   position: relative;
   top: 34%;
   left: 10%;
-  z-index: inherit;
 }
 
 .heading-primary {
@@ -34,7 +32,7 @@
 }
 
 .btn-learn-more {
-  background-color: rgb(20, 152, 212);
+  background-color: #989788;
   color: white;
   font-size: 1.1em;
   padding: 20px 30px 20px 30px;
@@ -47,7 +45,7 @@
 
   transition: all 0.3s ease;
   cursor: pointer;
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 
 .btn-learn-more:hover {
@@ -62,6 +60,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 20vh;
 }
 
 .summary-container {
@@ -83,7 +82,7 @@
 }
 
 .btn-email {
-  background-color: rgb(20, 152, 212);
+  background-color: #989788;
   color: white;
   font-size: 15px;
   padding: 15px 30px 15px 30px;
@@ -99,7 +98,7 @@
 }
 
 .btn-email:hover {
-  transform: translate(-5px, -15px);
+  transform: translate(-5px, -7px);
   padding: 16px 32px 17px 32px;
 }
 .btn-email:active {
@@ -107,9 +106,6 @@
 }
 
 @media screen and (max-width: 830px) {
-  .container {
-    position: static;
-  }
   .bg-image1 {
     height: 87vh;
     clip-path: none;
@@ -118,7 +114,7 @@
   .img-text-btn {
     width: 70%;
     min-width: 0;
-    top: 15vh;
+    top: 30%;
     left: 5%;
   }
   .heading-primary {

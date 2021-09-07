@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Footer from "./Footer";
 import SwearingOfAffidavits from "./servicesComponents/SwearingOfAffidavits";
 import StatutoryDeclarations from "./servicesComponents/StatutoryDeclarations";
 import CommissioningOfExhibits from "./servicesComponents/CommissioningOfExhibits";
 import CertifiedTrueCopies from "./servicesComponents/CertifiedTrueCopies";
+
 import "../styles/Services.css";
 
 function Services() {
@@ -41,47 +42,117 @@ function Services() {
               bibendum maximus mi, at imperdiet dolor semper vitae.
             </p>
           </div>
-          <div className="second-nav-ctn">
-            <button
-              className={`second-nav-btns ${
-                active === "Swearing" && " selected-btn"
-              }`}
-              onClick={onSwearingBtn}
-            >
-              Swearing of Affidavits
-            </button>
-            <button
-              className={`second-nav-btns ${
-                active === "Certified" && " selected-btn"
-              }`}
-              onClick={onCertifiedBtn}
-            >
-              Certified True Copies
-            </button>
-            <button
-              className={`second-nav-btns ${
-                active === "Declarations" && " selected-btn"
-              }`}
-              onClick={onDeclarationsBtn}
-            >
-              Statutory Declarations
-            </button>
-            <button
-              className={`second-nav-btns ${
-                active === "Commisioning" && " selected-btn"
-              }`}
-              onClick={onCommisioningBtn}
-            >
-              Commissioning of Exhibits
-            </button>
+          <div className="second-nav-service-desktop-ctn">
+            <div className="second-nav-ctn">
+              <button
+                className={`second-nav-btns  ${
+                  active === "Swearing" && " selected-btn"
+                }`}
+                onClick={onSwearingBtn}
+              >
+                Swearing of Affidavits
+              </button>
+              <button
+                className={`second-nav-btns ${
+                  active === "Certified" && " selected-btn"
+                }`}
+                onClick={onCertifiedBtn}
+              >
+                Certified True Copies
+              </button>
+              <button
+                className={`second-nav-btns ${
+                  active === "Declarations" && " selected-btn"
+                }`}
+                onClick={onDeclarationsBtn}
+              >
+                Statutory Declarations
+              </button>
+              <button
+                className={`second-nav-btns ${
+                  active === "Commisioning" && " selected-btn"
+                }`}
+                onClick={onCommisioningBtn}
+              >
+                Commissioning of Exhibits
+              </button>
+            </div>
+            <div className="info-desktop">
+              {active === "Swearing" && <SwearingOfAffidavits />}
+              {active === "Certified" && <CertifiedTrueCopies />}
+              {active === "Declarations" && <StatutoryDeclarations />}
+              {active === "Commisioning" && <CommissioningOfExhibits />}
+            </div>
           </div>
-          <div>
-            {active === "Swearing" && <SwearingOfAffidavits />}
-            {active === "Certified" && <CertifiedTrueCopies />}
-            {active === "Declarations" && <StatutoryDeclarations />}
-            {active === "Commisioning" && <CommissioningOfExhibits />}
+          <div className="second-nav-service-mobile-ctn">
+            <div className="accordion">
+              <input
+                type="checkbox"
+                name="SwearingofAffidavits"
+                id="SwearingofAffidavits"
+                className="accordion__input"
+              />
+              <label
+                className="accordion__label"
+                htmlFor="SwearingofAffidavits"
+              >
+                Swearing of Affidavits
+              </label>
+              <div className="accordion__content">
+                <SwearingOfAffidavits />
+              </div>
+            </div>
+            <div className="accordion">
+              <input
+                type="checkbox"
+                name="CertifiedTrueCopies"
+                id="CertifiedTrueCopies"
+                className="accordion__input"
+              />
+              <label className="accordion__label" htmlFor="CertifiedTrueCopies">
+                Certified True Copies
+              </label>
+              <div className="accordion__content">
+                <SwearingOfAffidavits />
+              </div>
+            </div>
+            <div className="accordion">
+              <input
+                type="checkbox"
+                name="StatutoryDeclarations"
+                id="StatutoryDeclarations"
+                className="accordion__input"
+              />
+              <label
+                className="accordion__label"
+                htmlFor="StatutoryDeclarations"
+              >
+                Statutory Declarations
+              </label>
+              <div className="accordion__content">
+                <SwearingOfAffidavits />
+              </div>
+            </div>
+            <div className="accordion">
+              <input
+                type="checkbox"
+                name="CommissioningofExhibits"
+                id="CommissioningofExhibits"
+                className="accordion__input"
+              />
+              <label
+                className="accordion__label"
+                htmlFor="CommissioningofExhibits"
+              >
+                Commissioning of Exhibits
+              </label>
+              <div className="accordion__content">
+                <SwearingOfAffidavits />
+              </div>
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

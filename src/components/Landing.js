@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 import "../styles/Landing.css";
 
 function Landing() {
@@ -13,7 +14,7 @@ function Landing() {
               finibus a velit sed vulputate.
             </h1>
 
-            <Link to="/info">
+            <Link to="/Services">
               <button className="btn-learn-more">learn more</button>
             </Link>
           </div>
@@ -35,6 +36,7 @@ function Landing() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
