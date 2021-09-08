@@ -20,7 +20,7 @@ function Contact() {
             <div className="contact-info-ctn">
               <div className="email-form-ctn">
                 <form
-                  action="https://formsubmit.co/joshua.tardioli@gmail.com"
+                  action="https://formsubmit.co/lutardioli@yahoo.ca"
                   method="POST"
                 >
                   <div className="form-group">
