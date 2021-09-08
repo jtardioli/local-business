@@ -1,0 +1,86 @@
+.ty-bg {
+  background: radial-gradient(
+    circle,
+    rgba(83, 86, 108, 1) 10%,
+    rgba(39, 49, 63, 1) 86%
+  );
+
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-ctn {
+  width: 50%;
+  height: 40%;
+  background-color: rgb(237, 233, 233);
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 5px #222);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid black 1px;
+}
+
+.btn-learn-ty {
+  background-color: #989788;
+  color: white;
+  font-size: 1.1em;
+  padding: 20px 30px 20px 30px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  white-space: nowrap;
+  filter: drop-shadow(1px 1px 1px rgb(59, 59, 59));
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 3vh;
+}
+
+.btn-learn-ty:hover {
+  transform: translate(-5px, -15px);
+  padding: 22px 32px 22px 32px;
+}
+.btn-learn-ty:active {
+  transform: translate(-4px, -8px);
+}
+
+.msg-sent {
+  font-size: 2.2em;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CHECKBOX*/
+
+.label__check {
+  display: inline-block;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  /*line-height: 30px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.label__icon {
+  font-size: 20px;
+}

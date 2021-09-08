@@ -89,6 +89,10 @@
   }
   .footer-links {
     margin: 5vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .border-div {
     width: 90%;
@@ -96,5 +100,8 @@
 
   .seperator {
     display: none;
+  }
+  .links-space {
+    margin: 10px;
   }
 }

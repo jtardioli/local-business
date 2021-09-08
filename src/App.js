@@ -5,6 +5,7 @@ import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
+import ThankYou from "./components/ThankYou";
 import "./index.css";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/contact" exact>
           <Contact />
+        </Route>
+        <Route path="/thankyou" exact>
+          <ThankYou />
         </Route>
       </Switch>
     </div>

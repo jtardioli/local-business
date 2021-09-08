@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import "../styles/Contact.css";
 
-function Landing() {
+function Contact() {
   return (
     <div>
       <div className="container2">
@@ -19,7 +19,10 @@ function Landing() {
             </div>
             <div className="contact-info-ctn">
               <div className="email-form-ctn">
-                <form action="">
+                <form
+                  action="https://formsubmit.co/joshua.tardioli@gmail.com"
+                  method="POST"
+                >
                   <div className="form-group">
                     <label htmlFor="name">Name:</label>
                     <div className="name-ctn">
@@ -27,15 +30,17 @@ function Landing() {
                         placeholder="First Name"
                         type="text"
                         htmlFor="firstname"
-                        name="firstname"
+                        name="First Name"
                         className="name"
+                        required
                       ></input>
                       <input
                         placeholder="Last Name"
                         className="name"
                         type="text"
                         id="lastname"
-                        name="lastname"
+                        name="Last Name"
+                        required
                       ></input>
                     </div>
                   </div>
@@ -47,39 +52,48 @@ function Landing() {
                       type="email"
                       id="email"
                       name="email"
+                      required
                     ></input>
                   </div>
                   <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea
                       id="message"
-                      name="message"
+                      name="Message"
                       cols="30"
                       rows="10"
+                      required
                     ></textarea>
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="NEW Commissioner Of Oaths"
+                    ></input>
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="http://localhost:3000/thankyou"
+                    ></input>
                   </div>
                   <div className="form-group"></div>
 
                   <button className="btn-email submit-btn" type="submit">
                     Submit
                   </button>
-                  <div id="status" className="success">
-                    Success
-                  </div>
                 </form>
               </div>
               <div className="contact-info">
                 <label className="contact-header" htmlFor="phone">
                   Phone
                 </label>
-                <a className="contact-sub" href="tel:6138302283">
-                  (613) 204-2283
+                <a className="contact-sub" href="tel:6138585035">
+                  (613) 858-5035
                 </a>
                 <label className="contact-header" htmlFor="email-click">
                   Email
                 </label>
-                <a className="contact-sub" href="mailto:jdt@live.ca">
-                  jdt@live.ca
+                <a className="contact-sub" href="mailto:lutardioli@yahoo.ca">
+                  lutardioli@yahoo.ca
                 </a>
                 <iframe
                   title="map"
@@ -100,4 +114,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Contact;

@@ -14,12 +14,12 @@ function Footer() {
         </div>
         <div className="spacing">
           <div className="footer-links">
-            <a className="links-space" href="tel:6138302283">
-              (613-204-2283)
+            <a className="links-space" href="tel:6138585035">
+              (613) 858-5035
             </a>{" "}
             <span className="seperator">|</span>
-            <a href="mailto:jdt@live.ca" className="links-space">
-              jdt@live.ca
+            <a href="mailto:lutardioli@yahoo.ca" className="links-space">
+              lutardioli@yahoo.ca
             </a>
           </div>
         </div>

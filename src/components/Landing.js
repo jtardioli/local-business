@@ -30,7 +30,7 @@ function Landing() {
               viverra tellus quam, in congue mauris condimentum ut.
             </p>
             <div>
-              <a href="mailto:jdt@live.ca">
+              <a href="mailto:lutardioli@yahoo.ca">
                 <button className="btn-email">email us</button>
               </a>
             </div>
