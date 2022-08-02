@@ -1,4 +1,6 @@
-## Home Buisness Website for Commisioner of Oaths
+## Home Buisness for a Commisioner of Oaths
+
+This is a super simple static website for a home buisness. It displays my ability to make a simple, stylish and responsive website for any buisness
 
 View this app [HERE](https://laughing-borg-123be7.netlify.app/)
 
@@ -9,3 +11,6 @@ View this app [HERE](https://laughing-borg-123be7.netlify.app/)
 ![image](https://user-images.githubusercontent.com/85530348/145665580-9869c367-ca97-4e57-a324-b05288bb0dc2.png)
 
 
+## Stack
+- react
+- scss
