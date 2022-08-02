@@ -1,6 +1,6 @@
-## Home Buisness for a Commisioner of Oaths
+## Local Buisness for a Commisioner of Oaths
 
-This is a super simple static website for a home buisness. It displays my ability to make a simple, stylish and responsive website for any buisness
+This is a super simple static website for a Local buisness. It displays my ability to make a simple, stylish and responsive website for any buisness
 
 View this app [HERE](https://laughing-borg-123be7.netlify.app/)
 
